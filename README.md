@@ -4,7 +4,7 @@ A clean and professional personal website showcasing my academic profile, resear
 
 ## 🌐 Live Website
 
-Visit the website at: `https://marati-bhaskar.github.io/personal-website/`
+Visit the website at: `https://marati-bhaskar.github.io/`
 
 ## 📋 About
 
@@ -50,8 +50,8 @@ To run this website locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/marati-bhaskar/personal-website.git
-   cd personal-website
+   git clone https://github.com/marati-bhaskar/marati-bhaskar.github.io.git
+   cd marati-bhaskar.github.io
    ```
 
 2. Open `index.html` in your web browser:
@@ -84,16 +84,15 @@ To run this website locally:
 
 ### Initial Setup
 
-1. Create a new repository on GitHub named `personal-website`
+1. Create a new repository on GitHub named `marati-bhaskar.github.io` (must match your GitHub username for a user page)
 
 2. Initialize git and push to GitHub:
    ```bash
-   cd website
    git init
    git add .
    git commit -m "Initial commit: Personal website"
    git branch -M main
-   git remote add origin https://github.com/marati-bhaskar/personal-website.git
+   git remote add origin https://github.com/marati-bhaskar/marati-bhaskar.github.io.git
    git push -u origin main
    ```
 
@@ -103,7 +102,7 @@ To run this website locally:
    - Scroll down to **Pages** in the left sidebar
    - Under **Source**, select `main` branch
    - Click **Save**
-   - Your site will be published at `https://marati-bhaskar.github.io/personal-website/`
+   - Your site will be published at `https://marati-bhaskar.github.io/`
 
 ### Updating the Website
 

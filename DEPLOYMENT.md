@@ -9,7 +9,7 @@ Your personal website is ready to be deployed! Follow these steps to host it on 
 1. Go to [GitHub](https://github.com) and log in to your account
 2. Click the **+** icon in the top-right corner and select **New repository**
 3. Fill in the repository details:
-   - **Repository name**: `personal-website` (or any name you prefer)
+   - **Repository name**: `marati-bhaskar.github.io` (must exactly match your GitHub username + `.github.io` for a user page)
    - **Description**: "Personal academic website showcasing my research and projects"
    - **Visibility**: Public (required for free GitHub Pages)
    - **Do NOT** initialize with README, .gitignore, or license (we already have these)
@@ -20,12 +20,11 @@ Your personal website is ready to be deployed! Follow these steps to host it on 
 After creating the repository, GitHub will show you some commands. Run these in your terminal:
 
 ```bash
-cd /home/rgbsm/resume/website
-git remote add origin https://github.com/marati-bhaskar/personal-website.git
+git remote add origin https://github.com/marati-bhaskar/marati-bhaskar.github.io.git
 git push -u origin main
 ```
 
-**Note**: Replace `marati-bhaskar` with your actual GitHub username if different, and `personal-website` with your repository name if you chose a different name.
+**Note**: Replace `marati-bhaskar` with your actual GitHub username. The repo name must be `<your-username>.github.io` for a user page.
 
 If prompted for credentials:
 - **Username**: Your GitHub username
@@ -48,7 +47,7 @@ If prompted for credentials:
 
 After a few minutes, your website will be live at:
 ```
-https://marati-bhaskar.github.io/personal-website/
+https://marati-bhaskar.github.io/
 ```
 
 GitHub will show you the URL on the Pages settings page.
@@ -60,13 +59,11 @@ GitHub will show you the URL on the Pages settings page.
 If you have GitHub CLI installed and authenticated:
 
 ```bash
-cd /home/rgbsm/resume/website
-
 # Create repository
-gh repo create personal-website --public --source=. --remote=origin --push
+gh repo create marati-bhaskar.github.io --public --source=. --remote=origin --push
 
 # Enable GitHub Pages
-gh api repos/marati-bhaskar/personal-website/pages \
+gh api repos/marati-bhaskar/marati-bhaskar.github.io/pages \
   -X POST \
   -F source[branch]=main \
   -F source[path]=/
@@ -79,7 +76,6 @@ gh api repos/marati-bhaskar/personal-website/pages \
 After making changes to your website:
 
 ```bash
-cd /home/rgbsm/resume/website
 git add .
 git commit -m "Description of your changes"
 git push
@@ -167,8 +163,6 @@ To use a custom domain like `www.yourdomain.com`:
 - Contact: cs24d001@iittp.ac.in
 
 ---
-
-**Your website files are ready at**: `/home/rgbsm/resume/website/`
 
 **Next Step**: Follow Option 1 above to create the GitHub repository and deploy your website! 🚀
 
