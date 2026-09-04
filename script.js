@@ -23,9 +23,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll <= 0) {
-        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        navbar.style.boxShadow = 'none';
     } else {
-        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
+        navbar.style.boxShadow = '0 1px 6px rgba(28, 39, 51, 0.07)';
     }
     
     lastScroll = currentScroll;
@@ -91,27 +91,23 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 const animateElements = document.querySelectorAll(
-    '.timeline-item, .project-card, .award-item, .publication-item, .course-card, .skill-category, .contact-item'
+    '.timeline-item, .award-item, .publication-item, .skill-category, .contact-item'
 );
 
 animateElements.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.style.transform = 'translateY(12px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
 });
 
 // Add animation delay to staggered elements
 document.querySelectorAll('.timeline-item').forEach((item, index) => {
-    item.style.transitionDelay = `${index * 0.1}s`;
+    item.style.transitionDelay = `${index * 0.08}s`;
 });
 
-document.querySelectorAll('.project-card').forEach((item, index) => {
-    item.style.transitionDelay = `${index * 0.1}s`;
-});
-
-document.querySelectorAll('.course-card').forEach((item, index) => {
-    item.style.transitionDelay = `${index * 0.05}s`;
+document.querySelectorAll('.award-item').forEach((item, index) => {
+    item.style.transitionDelay = `${index * 0.06}s`;
 });
 
 // Scroll progress indicator (optional - can be enabled)
@@ -121,8 +117,8 @@ function createScrollProgress() {
         position: fixed;
         top: 0;
         left: 0;
-        height: 3px;
-        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        height: 2px;
+        background: #34556e;
         z-index: 9999;
         transition: width 0.1s ease;
     `;
@@ -142,21 +138,21 @@ const backToTopBtn = document.createElement('button');
 backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
 backToTopBtn.style.cssText = `
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    bottom: 28px;
+    right: 28px;
+    width: 42px;
+    height: 42px;
+    background: #1c2733;
+    color: #ffffff;
     border: none;
-    border-radius: 50%;
-    font-size: 1.2rem;
+    border-radius: 3px;
+    font-size: 0.95rem;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgba(28, 39, 51, 0.18);
 `;
 
 document.body.appendChild(backToTopBtn);
@@ -179,11 +175,11 @@ backToTopBtn.addEventListener('click', () => {
 });
 
 backToTopBtn.addEventListener('mouseenter', () => {
-    backToTopBtn.style.transform = 'scale(1.1) translateY(-5px)';
+    backToTopBtn.style.transform = 'translateY(-2px)';
 });
 
 backToTopBtn.addEventListener('mouseleave', () => {
-    backToTopBtn.style.transform = 'scale(1) translateY(0)';
+    backToTopBtn.style.transform = 'translateY(0)';
 });
 
 // Print current year in footer (if needed)
@@ -213,6 +209,5 @@ if ('IntersectionObserver' in window) {
 }
 
 // Console message
-console.log('%c👋 Welcome to my website!', 'font-size: 20px; font-weight: bold; color: #667eea;');
-console.log('%cFeel free to explore the code!', 'font-size: 14px; color: #764ba2;');
+console.log('%cMarati Bhaskar — PhD Scholar, IIT Tirupati', 'font-size: 14px; font-weight: bold; color: #1c2733;');
 

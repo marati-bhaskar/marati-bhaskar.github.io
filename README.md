@@ -1,6 +1,6 @@
 # Marati Bhaskar - Personal Website
 
-A clean and professional personal website showcasing my academic profile, research, projects, and achievements.
+A clean and professional personal website showcasing my academic profile, research, and achievements.
 
 ## 🌐 Live Website
 
@@ -18,11 +18,9 @@ This is a personal website for Marati Bhaskar, PhD Scholar in Computer Science &
 
 ## 🚀 Features
 
-- **Hero Section**: Eye-catching introduction with gradient background
-- **About Section**: Brief introduction and research interests
+- **Opening Section**: Photograph and formal introduction, visible without scrolling
 - **Education Timeline**: Visual timeline of educational background
-- **Research & Publications**: Academic publications and coursework
-- **Projects**: Detailed project descriptions and achievements
+- **Research & Publications**: Academic publications
 - **Awards & Skills**: Recognition, technical skills, and languages
 - **Contact**: Multiple ways to get in touch
 
@@ -38,10 +36,11 @@ This is a personal website for Marati Bhaskar, PhD Scholar in Computer Science &
 
 ```
 website/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styling
-├── script.js           # JavaScript functionality
-└── README.md          # This file
+├── index.html                  # Main HTML file
+├── styles.css                  # CSS styling
+├── script.js                   # JavaScript functionality
+├── cs24d001-1-980x843.jpg      # Profile photograph (opening section)
+└── README.md                   # This file
 ```
 
 ## 🔧 Local Development
@@ -129,7 +128,6 @@ To customize this website for your own use:
 2. **Content Sections**: Modify the content in each section to match your profile:
    - Education
    - Research publications
-   - Projects
    - Awards and achievements
    - Skills
 
@@ -147,11 +145,12 @@ To customize this website for your own use:
 
 The website uses the following primary colors (defined in CSS variables):
 
-- Primary: `#2c3e50` (Dark blue-gray)
-- Secondary: `#3498db` (Blue)
-- Accent: `#e74c3c` (Red)
-- Background: `#f8f9fa` (Light gray)
-- Gradient: `#667eea` to `#764ba2` (Purple gradient)
+- Primary: `#1c2733` (Ink)
+- Secondary: `#34556e` (Muted slate blue)
+- Accent: `#24394b` (Deep slate)
+- Text: `#3b4551` (Body text)
+- Background: `#f6f7f8` (Light neutral)
+- Rules and borders: `#e4e7ea` (Hairline grey)
 
 ## 📱 Responsive Breakpoints
 
@@ -164,7 +163,7 @@ The website uses the following primary colors (defined in CSS variables):
 - Semantic HTML5 markup
 - Meta description and author tags
 - Proper heading hierarchy (H1, H2, H3)
-- Alt text for images (when added)
+- Alt text for images
 - Fast loading times
 
 ## 📄 License

@@ -10,7 +10,7 @@ Your personal website is ready to be deployed! Follow these steps to host it on 
 2. Click the **+** icon in the top-right corner and select **New repository**
 3. Fill in the repository details:
    - **Repository name**: `marati-bhaskar.github.io` (must exactly match your GitHub username + `.github.io` for a user page)
-   - **Description**: "Personal academic website showcasing my research and projects"
+   - **Description**: "Personal academic website showcasing my research and achievements"
    - **Visibility**: Public (required for free GitHub Pages)
    - **Do NOT** initialize with README, .gitignore, or license (we already have these)
 4. Click **Create repository**
