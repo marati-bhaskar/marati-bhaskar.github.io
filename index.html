@@ -33,7 +33,7 @@
     <section id="home" class="hero">
         <div class="hero-inner">
             <figure class="hero-photo">
-                <img src="cs24d001-1-980x843.jpg" alt="Portrait of Marati Bhaskar"
+                <img src="assets/images/cs24d001-1-980x843.jpg" alt="Portrait of Marati Bhaskar"
                      onerror="this.closest('.hero-photo').classList.add('no-photo');">
                 <span class="photo-fallback" aria-hidden="true">MB</span>
             </figure>
@@ -68,62 +68,35 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Ph.D., Computer Science &amp; Engineering</h3>
-                            <span class="timeline-date">2023 &ndash; Present</span>
-                        </div>
-                        <p class="timeline-institution">Indian Institute of Technology Tirupati</p>
-                        <p class="timeline-detail"><strong>CGPA: 9.48/10</strong></p>
-                        <p class="timeline-detail">Research Area: High-Performance Computing</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>B.Tech, Electronics &amp; Communication Engineering</h3>
-                            <span class="timeline-date">2019 &ndash; 2023</span>
-                        </div>
-                        <p class="timeline-institution">National Institute of Technology Nagaland</p>
-                        <p class="timeline-detail"><strong>CGPA: 9.49/10</strong></p>
-                        <p class="timeline-detail">Awarded B.Tech Gold Medal</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Intermediate (MPC)</h3>
-                            <span class="timeline-date">2017 &ndash; 2019</span>
-                        </div>
-                        <p class="timeline-institution">Sri Chaitanya Junior College</p>
-                        <p class="timeline-detail"><strong>CGPA: 9.88/10</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Research & Publications Section -->
     <section id="research" class="section">
         <div class="container">
             <h2 class="section-title">Research &amp; Publications</h2>
+            <!--
+                Publication entry template. Each entry may include up to four
+                optional link buttons, in this order: Venue (label with the
+                actual venue name, e.g. "SC '26", not the word "Venue"),
+                Paper, Code, Presentation. Omit any <a> you don't have a
+                link for yet — don't leave it empty or pointed at "#".
+            -->
             <div class="publications">
                 <div class="publication-item">
                     <h3 class="publication-title">Parallel Breadth-First Search Optimization Strategies</h3>
                     <p class="publication-authors"><strong>Marati Bhaskar</strong>, Raghavendra Kanakagiri</p>
-                    <p class="publication-venue">arXiv preprint arXiv:2503.00430, 2025</p>
                     <div class="publication-links">
+                        <a href="https://fastcode.org/events/fastcode-challenge/fcpc25-results/" target="_blank" rel="noopener" class="pub-link">
+                            <i class="fas fa-location-dot"></i> FCPC @ PPoPP&rsquo;25
+                        </a>
                         <a href="https://dl.acm.org/doi/abs/10.1145/3711708.3723451" target="_blank" rel="noopener" class="pub-link">
-                            <i class="fas fa-file-pdf"></i> acm.org
+                            <i class="fas fa-file-pdf"></i> Paper
+                        </a>
+                        <a href="https://github.com/marati-bhaskar/Parallel_BFS" target="_blank" rel="noopener" class="pub-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="assets/docs/BFS_Presentation.pdf" target="_blank" rel="noopener" class="pub-link">
+                            <i class="fas fa-display"></i> Presentation
                         </a>
                     </div>
                 </div>
@@ -237,6 +210,50 @@
                         <li><strong>2023:</strong> Represented NIT Nagaland in INTER-NIT'23 Chess at NIT Silchar</li>
                         <li><strong>2022:</strong> Organized Chess Tournament at Ekarthin'22, NIT Nagaland</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Education Section -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ph.D., Computer Science &amp; Engineering</h3>
+                            <span class="timeline-date">2023 &ndash; Present</span>
+                        </div>
+                        <p class="timeline-institution">Indian Institute of Technology Tirupati</p>
+                        <p class="timeline-detail"><strong>CGPA: 9.48/10</strong></p>
+                        <p class="timeline-detail">Research Area: High-Performance Computing</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>B.Tech, Electronics &amp; Communication Engineering</h3>
+                            <span class="timeline-date">2019 &ndash; 2023</span>
+                        </div>
+                        <p class="timeline-institution">National Institute of Technology Nagaland</p>
+                        <p class="timeline-detail"><strong>CGPA: 9.49/10</strong></p>
+                        <p class="timeline-detail">Awarded B.Tech Gold Medal</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intermediate (MPC)</h3>
+                            <span class="timeline-date">2017 &ndash; 2019</span>
+                        </div>
+                        <p class="timeline-institution">Sri Chaitanya Junior College</p>
+                        <p class="timeline-detail"><strong>CGPA: 9.88/10</strong></p>
+                    </div>
                 </div>
             </div>
         </div>

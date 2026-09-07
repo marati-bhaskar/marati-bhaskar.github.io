@@ -36,11 +36,15 @@ This is a personal website for Marati Bhaskar, PhD Scholar in Computer Science &
 
 ```
 website/
-├── index.html                  # Main HTML file
-├── styles.css                  # CSS styling
-├── script.js                   # JavaScript functionality
-├── cs24d001-1-980x843.jpg      # Profile photograph (opening section)
-└── README.md                   # This file
+├── index.html                          # Main HTML file
+├── styles.css                          # CSS styling
+├── script.js                           # JavaScript functionality
+├── assets/
+│   ├── images/
+│   │   └── cs24d001-1-980x843.jpg      # Profile photograph (opening section)
+│   └── docs/
+│       └── BFS_Presentation.pdf        # Presentation linked from Publications
+└── README.md                           # This file
 ```
 
 ## 🔧 Local Development
