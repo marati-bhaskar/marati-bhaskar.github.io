@@ -589,6 +589,10 @@ a {
     text-decoration: underline;
 }
 
+.award-link + .award-link {
+    margin-left: 1.1rem;
+}
+
 /* Skills */
 .skills-container {
     display: grid;
